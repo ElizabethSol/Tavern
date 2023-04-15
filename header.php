@@ -26,10 +26,10 @@
                   <a class="nav-link" href="menu.php">Меню</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.php">О нас</a>
+                  <a class="nav-link" href="book.php">Забронировать место</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="book.php">Записаться</a>
+                  <a class="nav-link" href="about.php">О нас</a>
                 </li>
               </ul>
             </div>

@@ -32,7 +32,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Записаться
+          Забронировать столик
         </h2>
       </div>
       <div class="row">
@@ -70,6 +70,8 @@
               <div>
                 <input type="date" class="form-control" name="sendDate">
               </div>
+              <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off">
+              <p>Нажимая на кнопку "Отправить", я даю <a href="https://54.rkn.gov.ru/protection/docsamples/">согласие на обработку персональных данных.</a></p>
               <div class="btn_box">
                 <button class="bttn" name="bttn">
                   Записаться
