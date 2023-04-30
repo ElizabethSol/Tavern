@@ -59,7 +59,7 @@ require('php/db.php');
                       Таверна
                     </h1>
                     <p>
-                      Каждые выходыне у нас вы можете собраться с друзьями и поиграть в разные настольные игры.
+                      Каждые выходные у нас вы можете собраться с друзьями и поиграть в разные настольные игры.
                     </p>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ require('php/db.php');
                       Таверна
                     </h1>
                     <p>
-                      Уютная и домашняя обстановка.
+                     Приходите к нам, чтобы погрузиться в уютную и домашнюю атмосферу, которая создана для вашего комфорта.
                     </p>
                   </div>
                 </div>
@@ -98,6 +98,10 @@ require('php/db.php');
   <section class="offer_section layout_padding-bottom">
     <div class="offer_container">
       <div class="container ">
+          <div class="heading_container heading_center">
+        <h2>
+          Акции
+        </h2>
         <div class="row">
           <div class="col-md-6  ">
             <div class="box ">
