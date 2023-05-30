@@ -1,6 +1,20 @@
+<?php 
+require('php/db.php');
+?>
 <!DOCTYPE html>
 <html>
   <head>
+      <style>
+      .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+}
+    </style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -41,7 +55,13 @@
 
     <section class="about_section layout_padding">
       <div class="container">
-        
+        <div class="gallery">
+        <?php
+        $galery = get_galery_all();
+        foreach ($galery as $item): ?>
+          <img src="<?php echo $item["image"];?>" alt="Image 1">
+        <?php endforeach; ?>
+        </div>
       </div>
     </section>
 

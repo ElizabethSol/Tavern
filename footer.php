@@ -7,15 +7,15 @@
               <div class="contact_link_box">
                 <a href="">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span> Указать адрес </span>
+                  <span> г. Ростов-на-Дону, ул. Пушкинская 157 </span>
                 </a>
                 <a href="">
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span> Позвонить - указать номер </span>
+                  <span> Позвонить - +7 (951) 523-98-57 </span>
                 </a>
                 <a href="">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span> 123@yandex.ru </span>
+                  <span> taverncafe@yandex.ru </span>
                 </a>
               </div>
             </div>
@@ -26,23 +26,6 @@
               <p>
               Таверна - это уютное место, где встречаются путешественники и жители города, чтобы насладиться блюдами настоящей домашней кухни.
               </p>
-              <div class="footer_social">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-pinterest" aria-hidden="true"></i>
-                </a>
-              </div>
             </div>
           </div>
           <div class="col-md-4 footer-col">

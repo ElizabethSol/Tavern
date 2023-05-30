@@ -32,7 +32,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Забронировать столик
+          Забронировать место
         </h2>
       </div>
       <div class="row">
@@ -43,7 +43,7 @@
                 <input type="text" class="form-control" placeholder="Ваше имя" name="senderName" />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Номер телефона" name="sendPhone"/>
+                <input type="text" class="form-control" placeholder="Номер телефона" name="sendPhone" id="phone" class="phone"/>
               </div>
               <div>
                 <input type="email" class="form-control" placeholder="Ваш Email" name="senderEmail"/>
@@ -70,11 +70,13 @@
               <div>
                 <input type="date" class="form-control" name="sendDate">
               </div>
-              <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off">
-              <p>Нажимая на кнопку "Отправить", я даю <a href="https://54.rkn.gov.ru/protection/docsamples/">согласие на обработку персональных данных.</a></p>
+                <label style="display: inline-block;">
+                  <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off">
+                  Нажимая на кнопку "Забронировать", я даю <a href="https://54.rkn.gov.ru/protection/docsamples/">согласие на обработку персональных данных.</a>
+                </label>
               <div class="btn_box">
                 <button class="bttn" name="bttn">
-                  Записаться
+                  Забронировать
                 </button>
               </div>
             </form>
@@ -97,7 +99,20 @@
       </div>
     </div>
   </section>
+    <script>
+        const phoneInput = document.getElementById("phone");
+        const phoneRegex = /^\+?[1-9]\d{1,11}$/;
+        function validatePhone() {
+        const phone = phoneInput.value;
+        if (phoneRegex.test(phone)) {
+            phoneInput.setCustomValidity("");
+        } else {
+            phoneInput.setCustomValidity("Некорректный номер телефона");
+        }
+        }
 
+        phoneInput.addEventListener("input", validatePhone);
+    </script>
   <?php require("footer.php");?>
 
   <script src="js/jquery-3.4.1.min.js"></script>

@@ -1,10 +1,25 @@
-<?php 
-require('php/db.php');
-?>
 <!DOCTYPE html>
 <html>
-
+<?php require('php/db.php');?>
 <head>
+<style>
+    /* Стили для кнопки */
+    #scrollUpButton {
+      display: none; /* Изначально скрываем кнопку */
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #555;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+  </style>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -181,7 +196,7 @@ require('php/db.php');
               </div>
             </div>
           </div>
-          <?php endforeach; ?>
+          <?php endforeach;?>
       </div>
       <div class="btn-box">
         <a href="menu.php">
@@ -238,7 +253,26 @@ require('php/db.php');
   </section>
 
   <?php require("footer.php");?>
+  <button onclick="scrollToTop()" id="scrollUpButton" title="Прокрутить вверх">Вверх</button>
 
+<script>
+  // Показать кнопку, когда пользователь прокручивает страницу
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollUpButton").style.display = "block";
+    } else {
+      document.getElementById("scrollUpButton").style.display = "none";
+    }
+  }
+
+  // Плавно прокрутить страницу вверх при нажатии на кнопку
+  function scrollToTop() {
+    document.body.scrollTop = 0; // Для Safari
+    document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+  }
+</script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
